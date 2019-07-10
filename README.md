@@ -2,6 +2,8 @@
 
 > 使用[Vue](https://cn.vuejs.org/)和[iview](https://iviewui.com/)开发的一个简单的观影系统
 
+> 演示地址：[极简影院](https://sixming.com) 
+
 
 ## 安装的依赖
 
