@@ -1,6 +1,6 @@
 # 极简影院
 
-> 使用[Vue](https://cn.vuejs.org/)和[iview](https://iviewui.com/)开发的一个简单的观影系统
+> 使用[Vue](https://cn.vuejs.org/)和[iview](https://iviewui.com/)开发的一个简单的**移动端**观影系统 
 
 > 演示地址：[极简影院](https://sixming.com) 
 
