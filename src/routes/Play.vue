@@ -133,7 +133,7 @@ import  PlayMenu from "../components/PlayMenu"
 
 
 
-  this.$Message.success('视频已上膛,请点击下方播放按钮,'+'祝你观影愉快');
+//  this.$Message.success('视频已上膛,请点击下方播放按钮,'+'祝你观影愉快');
 
           })
           .catch(function (error) {

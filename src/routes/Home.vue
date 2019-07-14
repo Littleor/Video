@@ -9,7 +9,7 @@
       </Button>
     </div>
     <p class="content">{{content}}</p>
-    <p class="footer">Copyright © <a href="https://github.com/Littleor/Video">Littleor</a> and <Poptip title="RR" content="提供本站图标-一位PS大佬"><a>RR</a>
+    <p class="footer">Copyright ©<Poptip title="Littleor" content="一位技术热爱者，欢迎加入交流群:826352486"> <a >Littleor</a></Poptip> and <Poptip title="Rotten Raphael" content="提供本站图标-一位PS大佬"><a>RR</a>
     </Poptip> ALL right reserverd </p>
 
     <Poptip title="免责声明" word-wrap
