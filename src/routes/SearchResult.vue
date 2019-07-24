@@ -128,11 +128,7 @@
       },
       created() {
           //渲染完成请求数据
-
-
-
         this.$Spin.show();//显示加载中
-
         axios.get('https://sixming.com/apis/zyapi.php',{
           params: {
             ac: 'videolist',
