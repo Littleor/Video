@@ -1,0 +1,36 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><title>极简影院</title><meta name=description content=极简影院-追求极简,开源影院，全部免费所有资源应有尽有,界面只有一个搜索和播放器,观影迅速,为您提供各类电影,电视剧,动漫,综艺节目在线播放及下载服务,免费解析播放在线资源！><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0"><meta name=keywords content=极简影院,开源影院,免费电影,视频播放,vip视频解析,vip视频在线解析,vip解析,万能vip视频解析,vip视频全能解析,vip视频,手机vip视频解析,手机在线解析vip视频,优酷vip解析,爱奇艺vip解析,腾讯vip解析,乐视vip解析,芒果vip解析><script>var _hmt = _hmt || [];
+      (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?83664218bcb3422718ff897330967d9c";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();</script><script>document.addEventListener('plusready', function() {
+        var webview = plus.webview.currentWebview();
+        plus.key.addEventListener('backbutton', function() {
+          webview.canBack(function(e) {
+            if(e.canBack) {
+              webview.back();
+            } else {
+              //webview.close(); //hide,quit
+              //plus.runtime.quit();
+              //首页返回键处理
+              //处理逻辑：1秒内，连续两次按返回键，则退出应用；
+              var first = null;
+              plus.key.addEventListener('backbutton', function() {
+                //首次按键，提示‘再按一次退出应用’
+                if (!first) {
+                  first = new Date().getTime();
+                  console.log('再按一次退出应用');
+                  setTimeout(function() {
+                    first = null;
+                  }, 1000);
+                } else {
+                  if (new Date().getTime() - first < 1500) {
+                    plus.runtime.quit();
+                  }
+                }
+              }, false);
+            }
+          })
+        });
+      });</script><link href=./static/css/app.45a733a04963ec3256dbcc077d1cc469.css rel=stylesheet></head><body><div id=app></div><script type=text/javascript src=./static/js/manifest.3ad1d5771e9b13dbdad2.js></script><script type=text/javascript src=./static/js/vendor.e37986a74aa14aba6209.js></script><script type=text/javascript src=./static/js/app.0ebda3967ffcac22f8a4.js></script></body></html>
