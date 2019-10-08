@@ -62,7 +62,7 @@
                   loading: true,
                 }
               })
-              axios.get('https://sixming.com/apis/zyapi.php',{
+              axios.get('/apis/zyapi.php',{
                 params: {
                   ac: 'videolist',
                   t: 0,

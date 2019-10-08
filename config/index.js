@@ -12,16 +12,16 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/apis': {  //使用"/api"来代替"http://xxxx.cn"
-        target: 'http://api.sixming.com/', //源地址 （接口域名）
+        target: 'http://sixming.com/', //源地址 （接口域名）
         changeOrigin: true, //改变源 （是否跨域）
         pathRewrite: {
-          '^/apis': 'http://api.sixming.com/' //路径重写 (正常请求接口的简写)
+          '^/apis': 'http://sixming.com/apis' //路径重写 (正常请求接口的简写)
         }
       }
     },
 
     // Various Dev Server settings
-    host: '192.168.2.123', // can be overwritten by process.env.HOST
+    host: 'localhost', // can be overwritten by process.env.HOST
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
     autoOpenBrowser: false,
     errorOverlay: true,

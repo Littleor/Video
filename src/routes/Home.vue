@@ -1,10 +1,5 @@
 <template>
-  <div id="app">
-<div v-if="isad" class="img">
-  <Button size="large" icon="ios-close" class="icon" shape="circle" @click="()=>{this.isad=false;}"></Button>
-<img src="../assets/720.png"  @click="linkDownload('http://qdt.0808ds.cn/')">
-</div>
-    <div v-if="!isad">
+    <div id="app">
     <h1>极简影院</h1>
     <p>追求极简,一个搜索框便够了</p>
     <div class="div-input">
@@ -14,7 +9,7 @@
       </Button>
     </div>
     <p class="content">{{content}}</p>
-    <p class="footer">Copyright ©<Poptip title="Littleor" content="一位技术热爱者"> <a >Littleor</a></Poptip> and <Poptip title="Rotten Raphael" content="提供本站图标-一位PS大佬"><a>RR</a>
+    <p class="footer">Copyright © <Poptip title="Littleor" content="一位技术热爱者"> <a >Littleor</a></Poptip> and <Poptip title="Rotten Raphael" content="提供本站图标-一位PS大佬"><a>RR</a>
     </Poptip> ALL right reserverd </p>
 
     <Poptip title="免责声明" word-wrap
@@ -34,7 +29,7 @@
       <v-foot></v-foot>-->
     </div>
 
-  </div>
+
 </template>
 
 <script>
@@ -61,7 +56,6 @@
         content: '',
         place: '',
         desc: '',
-        isad:false,
 
 
       }
@@ -88,15 +82,6 @@
           }
         })
       },
-      linkDownload :function(url) {
-        mui.plusReady(function(){
-          plus.runtime.openURL(url);
-
-        });
-
-
-       // plus.runtime.openURL( url,'','');
-      }
 
     },
     beforeCreate() {
@@ -109,11 +94,10 @@
       const jinrishici = require('jinrishici');
       jinrishici.load(result => {
         this.content = result.data.content;
-
       }, errData => {
         console.log(err);
       });
-      axios.get('https://sixming.com/apis/tips.php', {
+      axios.get('/apis/tips.php', {
         params: {
           version:1.3,
           type:'app',
@@ -121,7 +105,6 @@
       })
         .then((response) => {
           this.desc = response.data.desc;
-          this.isad=response.data.ad;
           this.value=response.data.value;
         })
         .catch((error)=> {
@@ -129,7 +112,7 @@
           console.log(error);
         });
 
-      axios.get('https://sixming.com/apis/ip.php', {
+      axios.get('/apis/ip.php', {
         params: {}
       })
         .then((response) => {

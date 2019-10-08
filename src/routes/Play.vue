@@ -71,7 +71,7 @@ import  PlayMenu from "../components/PlayMenu"
         }
 */
 
-        axios.get('https://sixming.com/apis/api.php',{
+        axios.get('/apis/api.php',{
           params: {
             id:this.$route.query.id,
           }

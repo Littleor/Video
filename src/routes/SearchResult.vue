@@ -76,7 +76,7 @@
         pageChange:function(index) {
           this.$Spin.show();//显示加载中
           this.page=index;
-          axios.get('https://sixming.com/apis/zyapi.php',{
+          axios.get('/apis/zyapi.php',{
             params: {
               ac: 'videolist',
               t: 0,
@@ -129,7 +129,7 @@
       created() {
           //渲染完成请求数据
         this.$Spin.show();//显示加载中
-        axios.get('https://sixming.com/apis/zyapi.php',{
+        axios.get('/apis/zyapi.php',{
           params: {
             ac: 'videolist',
             t: 0,
