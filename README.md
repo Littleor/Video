@@ -17,7 +17,14 @@
 # dplayer
 # social-share.js
 ```
-
+## 使用说明 
+安装Vue-cli2.x以后再运行下列命令即可运行
+``` bash
+git clone https://github.com/Littleor/Video 
+cd Video 
+npm install 
+npm run dev 
+ ```
 ## 小结
 一个简单的影院系统，借助网络上的资源，使用后台抓取数据返回给前台来实现视频搜索播放。
 
