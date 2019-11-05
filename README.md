@@ -1,9 +1,7 @@
 # 极简影院
 
 > 使用[Vue](https://cn.vuejs.org/)和[iview](https://iviewui.com/)开发的一个简单的**移动端**观影系统 
-
-> 欢迎来到 极简影院QQ交流群：826352486
-
+> 欢迎来到 极简影院QQ交流群：826352486 
 > 演示地址：[极简影院](https://sixming.com) 
 
 
